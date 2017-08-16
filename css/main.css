@@ -1,0 +1,404 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        font-family:'Advent Pro', "Lucida Grande", sans-serif;
+    }
+
+
+/* footer {
+	display:flex;
+	
+	height:50vh;
+	background-color: #313131; 
+	width:100%;
+} */
+
+@media only screen and (max-width: 768px) {
+	footer {
+	display:flex;
+	flex-direction: column;
+	
+	background-color: #313131; 
+	width:100%;
+}
+}
+@media only screen and (min-width: 768px) {
+    footer {
+	display:flex;
+	
+	height:50vh;
+	background-color: #313131; 
+	width:100%;
+}
+}
+footer div {
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #313131;
+	margin-top:5vh;
+	margin-right:10vw;
+	color:white;
+}
+footer  ul{
+	padding-top:5vh;
+	list-style-type:none;
+}
+footer strong {
+	color:#9399ff;
+}
+footer h1{
+	color:#9399ff;
+}
+footer li {
+	padding-top:3vh;
+}
+    div.right
+{
+
+
+left:75vw;
+top:90vh;
+position : fixed;
+
+
+}
+div.image div {
+	margin-top:7%;
+	/*background-color: #9399ff;*/
+	margin-left:10%;
+	margin-right:10%;
+	/*width:100%;*/
+	width:70%;
+	height:20vh;
+	color:black;
+	text-align:center;
+	/*opacity:1;*/
+	opacity:1;
+	font-weight:1200;
+}
+div.image div h1 {
+	font-size:7vh;
+	/*letter-spacing: 0.15em;*/
+	/*opacity:0.9;*/
+}
+
+
+
+
+
+.box {
+  position:relative;
+  
+  color: black;
+  
+  height: 10vh;
+  width:20vw;
+  font-size: 5vh;
+  
+  text-align: center;
+  transition: 0.5s;
+  
+  cursor: pointer;
+  border: 4px solid black;
+  -webkit-transition:0.5s;
+  /*font-weight:bolder;*/
+}
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+
+.box:hover {
+  border: 1px solid rgba(0,160,80,0);
+  color: #FFF;
+}
+
+.bar::before {
+  border-bottom: 3px solid #FFF;
+  border-left: 3px solid #FFF;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.bar::after {
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  -webkit-transform-origin: 0% 100%;
+}
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
+
+
+
+div.image {
+	/*padding-top:50vh;*/
+	height:85vh;
+	padding-top:10vh;
+	/*margin-left:-35%;*/
+	background: url('./images/data-science1.jpg');
+	background-size:100% 100%;
+	opacity:0.9;
+
+	/*background-origin: content-box;*/
+	
+	/*border: 5px solid #9399ff;*/
+
+}
+div.main{
+	background-image: url('./images/background.jpg') ;	
+
+}
+div.container{
+
+	margin-left:7%;
+	margin-right:7%;
+	margin-top:0vh;
+	
+	width:86%;
+	/*height:500px;*/
+	/*border: 1px solid;*/
+}
+div.container div {
+		background-color:white;
+	padding-top:5vh;
+	padding-bottom:5vh;
+	margin:5vh auto;
+	padding-left:3vw;
+	padding-right:3vw;
+	/*border:1px #9399ff solid;*/
+	box-shadow: 0.25px 0.25px 5px #9399ff;
+
+}
+
+div.about hr{
+	
+	height:0.8px;
+	/*opacity: 0.6;*/
+	background-color: #9399ff;
+}
+h1{
+	font-size:4vh;
+	/*color:#9399ff;*/
+}
+#setters{
+	color:#9399ff;	
+}
+
+#headingBig{
+	font-size: 3.5vh;
+	/*color:#9399ff;*/
+}
+#svgRight{
+	float:right;
+}
+
+div.about ul{
+	/*padding-top:2vh;*/
+	margin-left:5vw;
+	color:black;
+}
+div.container div.faqs {
+	margin-top:20vh;
+		/*opacity:0.5;*/
+}
+div.faqs div.questions-wrapper{
+	display:flex;
+	/*flex-direction:row;*/
+	flex-wrap:wrap;
+	border:none;
+	box-shadow:none;
+	margin-left:0;
+
+	/*border:1px solid #9399ff;*/
+
+}
+div.questions p {
+	font-size:2.2vh;
+}
+div.questions-wrapper div.questions {
+	width:35%;
+	min-height:12vh;
+	margin-left:0.25vw;
+	margin-right:3vw;
+	height: 6.5vh;
+	/* padding-top:1.5vh;	 */
+	 padding-bottom:3vh; 
+	/*background-color:#9399ff;*/
+	border: 2px dashed #9399ff;
+	transition:all 0.5s ease;
+	/*overflow:hidden;*/
+	;
+}
+
+div.questions-wrapper div.questions:hover {
+	 min-height:15vh;
+	  max-height:20vh;  
+	transition: all 0.5s ease;
+	background-color:#9399ff;
+	border: 2px dashed white;
+	color:white;
+	/*padding-top:1vh;*/
+}
+
+div.angle{
+	z-index:1;
+	margin-left:95%;
+	margin-top:90vh;
+	position:fixed;
+	
+	width:6vh;
+	text-align:center;
+	font-size:8vh;
+	border-radius:50%;
+	color:black;
+	background-color:inherit;
+	transform:rotate(180deg);
+	transition:all 0.5s ease;
+	cursor:pointer;
+		/*border: 2px solid black;*/
+		/*box-shadow:  10px #313131;*/
+		
+
+}
+div.angle:hover{
+	/*background-color:#313131;*/
+	transform: rotate(0deg) ;
+	color:black;
+	transition: all 0.5s ease;
+	/*border: 1px solid white;*/
+}
+div.aboutUs td {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-bottom: 5vh;
+	padding-top:5vh;
+	background-color:#313131;
+	opacity:0.9;
+}
+div.aboutUs td:hover {
+	opacity:1;
+	background-color:#9399ff;
+}
+div.aboutUs{
+	/*margin-left:3vw;*/
+	display:flex;
+	flex-wrap: wrap;
+	width:100%;
+	
+	text-align:center;
+	
+	color:white;
+	text-align:center;
+
+	/*height:100vh;*/
+	/*cursor:progress;*/
+
+}
+
+div.aboutUs:hover{
+	opacity:1;
+}
+
+.topnav {
+	z-index:1;
+  overflow: hidden;
+  position:fixed;
+  width:100%;
+  background-color: #313131;
+  opacity:0.9;
+  transition:all 1s ease;
+}
+
+.topnav a {
+	height:100%;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+.topnav:hover{
+	opacity:1;
+	transition: all 1s ease;
+
+}
+
+.topnav a:hover {
+  background-color: #9399ff;
+  color: white;
+  font-weight900;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+div.angle{
+	display:none;
+}
+}
+
+@media screen and (max-width: 800px) {
+	div.aboutUs tr{
+		display:flex;
+		flex-direction: column;
+	}
+	div.aboutUs td {
+		width:100%;
+
+	}
+}
+
+@media screen and (max-width: 500px) {
+	p,h1,h2,h3,h4{
+		font-size:90%;
+	}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;opacity:0.9;background-color:#313131;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*transition:all 1s ease;*/
+
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
+
+
+}
+div.font li h1{
+	
+	font-size:5vh;
+	transition:all 1s ease;
+}
+
+
