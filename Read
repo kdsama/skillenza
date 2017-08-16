@@ -1,0 +1,25 @@
+Hi Every one,
+
+
+So I have made the landing page for the Skillenza Challenge , and challenges like these tell you how far you have come in the CSS world .
+Some Points related to the page are as follows :- 
+
+1. I have used pure CSS , no bootstrap nothing . 
+2. Used jQuery for selectors and a few operations like Scroll , change in HTML etc . 
+3. Used Images from google . Although I have hands on knowledge of svg . and like making cool stuffs using them ( have made a decepticon logo as well) 
+4. The page doesn't need a server to run from , as there are no requests ( thought of using nodeJs and fetch some cool data from backend and show it up on the page in visualized form like bar graph , line chart etc . But thought it wasnt requried ) 
+5. Media Queries is something that fails at times but I tried my best , so lets see . 
+6. I have used some external css code for navbar ( if width is less a droppable should emerge ) and the enter button animation (codepen.io have really awesome people posting awesome work ) 
+7. I have included the images inside the css, I dont know why , but I did it . 
+
+Things that I hoped but I couldn't do ( sometimes you just need little bid of guidance) 
+1. working out with the media queries . 
+2. cross browser compatibilty .Main thing here is , Which I now realize while typing here , that I used flexbox ,which I shouldnt have but I haven't taken care of cross-browser compatibility ( mos , o , webkit etc ) Everything is Working fine in Google Chrome . 
+3.Fonts . Bootstrap have really good default font , but I had to choose it myself and hoping that is likeable . 
+4.awesome left fixed social icons . They are there in the reference landing page , but they overlapped with the main content for smaller width . Well ofcouse We can hide it for smaller width devices . I didnt do that but gave it in footer (just like you guys ) 
+
+Apart from that there are no instructions as such . Just the basic HTML and CSS mixed with jQuery (and javascript ofcourse) 
+
+Well , whatever the result is , I would really appreciate if you guys give me a feedback kshitij.dhingra5@gmail.com
+
+Thanks
